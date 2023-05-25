@@ -6,9 +6,14 @@ class Car {
     int x;
     int y;
 	public:
-    Car(int x, int newy) {
+    Car(int x, int y) {
         this->x = x;
-        this->y = newy;
+        this->y = y;
+    }
+    void move() {
+        x++;
+        y++;
+        y++;
     }
 };
 
