@@ -24,5 +24,11 @@ class Car {
 };
 
 int main() {
-	
+	setlocale(LC_ALL, "ru");
+    Car car(0, 0);
+    for (int i = 0; i < 9; i++) {
+        car.move();
+        cout << "Координата X: " << car.getX() << "    Координа Y: " << car.getY() << endl;
+    }
+    return 0;
 }
